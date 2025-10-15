@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Murad Madi</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+        
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background-color: #ffffff;
+color: #333333;
+            overflow-x: hidden;
+}
+        h1, h2, h3, h4 {
+            font-family: 'Noto Serif Display', serif;
+            font-weight: 500;
+        }
+        .project-item {
+            transition: all 0.3s ease-out;
+            position: relative;
+            overflow: hidden;
+            will-change: transform, box-shadow;
+        }
+        .project-item:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-5px);
+        }
+        .project-item img {
+            filter: grayscale(100%) brightness(0.8);
+            transition: all 0.4s ease-out;
+        }
+        .project-item:hover img {
+            filter: grayscale(0%) brightness(1);
+        }
+        .project-overlay {
+            opacity: 1;
+            transform: translateY(100%);
+            transition: all 0.3s ease-out;
+            background: rgba(0, 0, 0, 0.85);
+        }
+        .project-item:hover .project-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+.filter-btn.active {
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="text-center mb-16">
+            <h1 class="text-4xl font-medium text-gray-800 mb-4">Digital Marketing Portfolio</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Selected projects showcasing successful campaigns and digital strategies</p>
+        </div>
+<div class="grid grid-cols-1 gap-8">
+            <!-- Coming Soon Item -->
+            <div class="project-item rounded-lg overflow-hidden shadow-lg" data-category="all">
+                <div class="relative h-80 flex items-center justify-center bg-gray-100">
+                    <div class="text-center p-6">
+                        <h3 class="text-xl font-medium mb-2">Portfolio Coming Soon</h3>
+                        <p class="text-gray-600">Exciting projects are in the works - check back soon!</p>
+        </div>
+    </div>
+</div>
+        </div>
+</div>
+
+    <footer class="bg-white py-6 border-t border-e2e0d9">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="index.html" class="text-gray-600 hover:text-gray-800 text-sm">← Back to home</a>
+            <p class="text-gray-600 text-sm mt-4">© 2025 Murad Madi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+// Animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.project-item');
+            items.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.transition = 'all 0.4s ease-out';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 150 * index);
+            });
+        });
+</script>
+</body>
+</html>
