@@ -1,28 +1,130 @@
+/* =========================
+   Font Imports
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;400;500;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+/* =========================
+   Global Styles
+   ========================= */
 body {
-	padding: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+    font-family: 'Glacial Indifference', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
 }
 
-h1 {
-	font-size: 16px;
-	margin-top: 0;
+h1, h2, h3, h4 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 500;
 }
 
-p {
-	color: rgb(107, 114, 128);
-	font-size: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+a {
+    color: #646464;
+    transition: all 0.2s ease;
 }
 
-.card {
-	max-width: 620px;
-	margin: 0 auto;
-	padding: 16px;
-	border: 1px solid lightgray;
-	border-radius: 16px;
+a:hover {
+    color: #333333;
 }
 
-.card p:last-child {
-	margin-bottom: 0;
+/* =========================
+   Layout & Section Styles
+   ========================= */
+.hero-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.icon-container {
+    background-color: #e2e0d9;
+}
+
+/* =========================
+   Card Styles
+   ========================= */
+.card,
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e0d9;
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover,
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-color: #e2e0d9;
+}
+
+/* Card Animation */
+.card-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.card-animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   Project Gallery Styles
+   ========================= */
+.project-item {
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+    will-change: transform, box-shadow;
+}
+
+.project-item:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-5px);
+}
+
+.project-item img {
+    filter: grayscale(100%) brightness(0.8);
+    transition: all 0.4s ease-out;
+}
+
+.project-item:hover img {
+    filter: grayscale(0%) brightness(1);
+}
+
+.project-overlay {
+    opacity: 1;
+    transform: translateY(100%);
+    transition: all 0.3s ease-out;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   Profile Picture
+   ========================= */
+.profile-pic {
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   Filter Button
+   ========================= */
+.filter-btn.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* =========================
+   Form Styles
+   ========================= */
+#formMessage {
+    transition: all 0.3s ease;
 }

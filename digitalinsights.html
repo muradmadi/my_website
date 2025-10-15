@@ -4,87 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Insights</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <link href="dist/output.css" rel="stylesheet">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;400;500;600&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
-        body {
-            font-family: 'Glacial Indifference', sans-serif;
-            background-color: #ffffff;
-color: #333333;
-        }
-h1, h2, h3, h4 {
-            font-family: 'Noto Serif Display', serif;
-            font-weight: 500;
-        }
-        .project-item {
-            transition: all 0.3s ease-out;
-            position: relative;
-            overflow: hidden;
-            will-change: transform, box-shadow;
-        }
-        .project-item:hover {
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            transform: translateY(-5px);
-        }
-</style>
+    <link rel="icon" type="image/png" href="static/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Murad Madi" />
+    <link rel="manifest" href="static/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
+
 <body class="min-h-screen flex flex-col">
-    <div class="flex-grow">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="text-center mb-16">
-                <h1 class="text-4xl font-medium text-gray-800 mb-4">Digital Insights</h1>
-                <p class="text-gray-600 max-w-2xl mx-auto">Thoughts and articles on digital marketing trends and strategies</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Coming Soon Item -->
-                <div class="project-item rounded-lg overflow-hidden shadow-lg bg-white">
-                    <div class="relative h-64 flex items-center justify-center bg-gray-100">
-                        <div class="text-center p-6">
-                            <i data-feather="edit-3" class="w-12 h-12 mx-auto text-gray-400 mb-4"></i>
-                            <h3 class="text-xl font-medium mb-2">Insights Coming Soon</h3>
-                            <p class="text-gray-600">Thoughtful articles are in development</p>
-                        </div>
-                    </div>
+    <main>
+        <div class="flex-grow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl font-medium text-gray-800 mb-4">Digital Insights</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Thoughts and articles on digital marketing trends and strategies</p>
                 </div>
 
-                <!-- Repeat similar cards as needed -->
-                <div class="project-item rounded-lg overflow-hidden shadow-lg bg-white">
-                    <div class="relative h-64 flex items-center justify-center bg-gray-100">
-                        <div class="text-center p-6">
-                            <i data-feather="trending-up" class="w-12 h-12 mx-auto text-gray-400 mb-4"></i>
-                            <h3 class="text-xl font-medium mb-2">Trend Analysis</h3>
-                            <p class="text-gray-600">Industry insights coming soon</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                    <!-- Coming Soon Item -->
+                    <div class="project-item rounded-lg overflow-hidden shadow-lg bg-white">
+                        <div class="relative h-64 flex items-center justify-center bg-gray-100">
+                            <div class="text-center p-6">
+                                <i data-feather="edit-3" class="w-12 h-12 mx-auto text-gray-400 mb-4"></i>
+                                <h3 class="text-xl font-medium mb-2">Insights Coming Soon</h3>
+                                <p class="text-gray-600">Thoughtful articles are in development</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="project-item rounded-lg overflow-hidden shadow-lg bg-white">
-                    <div class="relative h-64 flex items-center justify-center bg-gray-100">
-                        <div class="text-center p-6">
-                            <i data-feather="bar-chart-2" class="w-12 h-12 mx-auto text-gray-400 mb-4"></i>
-                            <h3 class="text-xl font-medium mb-2">Data Stories</h3>
-                            <p class="text-gray-600">Case studies in development</p>
+                    <!-- Repeat similar cards as needed -->
+                    <div class="project-item rounded-lg overflow-hidden shadow-lg bg-white">
+                        <div class="relative h-64 flex items-center justify-center bg-gray-100">
+                            <div class="text-center p-6">
+                                <i data-feather="trending-up" class="w-12 h-12 mx-auto text-gray-400 mb-4"></i>
+                                <h3 class="text-xl font-medium mb-2">Trend Analysis</h3>
+                                <p class="text-gray-600">Industry insights coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item rounded-lg overflow-hidden shadow-lg bg-white">
+                        <div class="relative h-64 flex items-center justify-center bg-gray-100">
+                            <div class="text-center p-6">
+                                <i data-feather="bar-chart-2" class="w-12 h-12 mx-auto text-gray-400 mb-4"></i>
+                                <h3 class="text-xl font-medium mb-2">Data Stories</h3>
+                                <p class="text-gray-600">Case studies in development</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </main>
 
+    <!-- Footer -->
     <footer class="bg-white py-6 border-t border-e2e0d9">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <a href="index.html" class="text-gray-600 hover:text-gray-800 text-sm">← Back to home</a>
-            <p class="text-gray-600 text-sm mt-4">© 2025 Murad Madi. All rights reserved.</p>
+            <p class="text-gray-600 text-sm">
+                © <span id="currentYear"></span> Murad Madi. All rights reserved.
+            </p>
+            <p class="text-gray-500 text-xs mt-2">Master's Student in Digital Marketing</p>
         </div>
     </footer>
-
-    <script>
-        feather.replace();
-    </script>
+    <script src="main.js"> </script>
 </body>
 </html>
