@@ -71,7 +71,7 @@ Master's Student in Digital Marketing
 
 ## Contact
 
-Feel free to reach out via the [contact](muradmadi.com/contact.html) or email me at [muradmadi@gmail.com](mailto:muradmadi@gmail.com).
+Feel free to reach out via the [Contact Page](muradmadi.com/contact.html) or email me at [muradmadi@gmail.com](mailto:muradmadi@gmail.com).
 
 ---
 
