@@ -8,8 +8,8 @@ This site showcases my work, skills, and insights as a digital marketing profess
 ## Features
 
 - Modern Responsive Design: Built with Tailwind CSS and custom styles for a clean, professional look.
-- Portfolio Gallery: Explore my digital marketing projects and campaigns.
-- Blog ("Digital Insights"): Read my thoughts and articles on the latest in digital marketing.
+- Portfolio Gallery: Explore my digital marketing projects and campaigns. (coming soon)
+- Blog ("Digital Insights"): Read my thoughts and articles on the latest in digital marketing. (coming soon)
 - Resume Download: View or download my up-to-date resume.
 - Contact Form: Get in touch with me directly through the site.
 - Dynamic Animations: Smooth card and project animations for an engaging user experience.
@@ -65,13 +65,13 @@ muradmadi.com/
 
 Murad Madi  
 Master's Student in Digital Marketing  
-[LinkedIn](https://www.linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
+[LinkedIn](https://www.linkedin.com/in/muradmadi) | [GitHub](https://github.com/muradmadi)
 
 ---
 
 ## Contact
 
-Feel free to reach out via the [Contact Page](muradmadi.com/contact.html) or email me at [muradmadi@gmail.com](mailto:muradmadi@gmail.com).
+Feel free to reach out via the [contact form](contact.html) or email me at [muradmadi@gmail.com](mailto:muradmadi@gmail.com).
 
 ---
 
